@@ -4,7 +4,8 @@ from flask import Flask, request
 import os
 import openai
 load_dotenv()
-openai.api_key = os.getenv('OPENAI_API_KEY')
+#openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = "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"
 completion = openai.Completion()
 
 start_sequence = "\nEmanuel:"
