@@ -19,7 +19,7 @@ def ask(question, chat_log=None):
       temperature=0.9,
       max_tokens=256,
       top_p=1,
-      frequency_penalty=0,
+      frequency_penalty=0.5,
       presence_penalty=0.6,
       stop=["\n"],
     )
