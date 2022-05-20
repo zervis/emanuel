@@ -14,12 +14,12 @@ session_prompt = "The following is a conversation with an Emanuel and Human. \nE
 def ask(question, chat_log=None):
     prompt_text = f'{chat_log}{restart_sequence}: {question}{start_sequence}:'
     response = openai.Completion.create(
-      engine="text-davinci-002",
+      engine="davinci",
       prompt=prompt_text,
       temperature=0.9,
       max_tokens=150,
       top_p=1,
-      frequency_penalty=0.5,
+      frequency_penalty=0,
       presence_penalty=0.6,
       stop=["\n"],
     )
