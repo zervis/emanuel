@@ -3,7 +3,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 from emanuel import ask, append_interaction_to_chat_log
 app = Flask(__name__)
 # if for some reason your conversation with Emanuel gets weird, change the secret key
-app.config['SECRET_KEY'] = 'qwerty'
+app.config['SECRET_KEY'] = 'secret1'
 @app.route('/emanuel', methods=['POST'])
 def emanuel():
  incoming_msg = request.values['Body']
